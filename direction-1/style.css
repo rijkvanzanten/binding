@@ -1,0 +1,33 @@
+:root {
+	--type-xl: calc(var(--type-md) * 5);
+	--type-lg: calc(var(--type-md) * 1.7);
+	--type-md: 1rem;
+
+	--color-fg: hotpink;
+	--color-bg: papayawhip;
+
+	--font-display: 'Zapfino', cursive;
+	--font-body: 'Comic Sans MS';
+
+	--space-lg: calc(var(--space-md) * 1.5);
+	--space-md: 2rem;
+	--space-sm: calc(var(--space-md) / 1.5);
+}
+
+body {
+	font-size: var(--type-md);
+	font-family: var(--font-body);
+	color: var(--color-fg);
+	background-color: var(--color-bg);
+	padding-block-start: var(--space-lg);
+	padding-inline: var(--space-sm);
+}
+
+h1, h2, h3, h4 {
+	font-family: var(--font-display);
+}
+
+h1 {
+	font-size: var(--type-lg);
+	margin-block: var(--space-md);
+}
